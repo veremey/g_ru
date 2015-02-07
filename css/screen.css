@@ -87,9 +87,9 @@ a {
 }
 
 .out {
-  width: 1198px;
+  width: 1200px;
   height: auto;
-  margin: 21px auto 0;
+  margin: 21px auto 106px;
   *zoom: 1;
 }
 .out:after {
@@ -98,6 +98,12 @@ a {
   clear: both;
 }
 
+.push {
+  clear: both;
+  height: 106px;
+}
+
+/* --------------------- header ----------------- */
 .header {
   width: 1192px;
   margin: 0 auto;
@@ -150,4 +156,72 @@ a {
   background: url('../img/icons-s402a1f8442.png') 0 0 no-repeat;
   width: 20px;
   height: 20px;
+}
+
+/* ----------------------  footer -------------------------- */
+.footer {
+  position: relative;
+  width: 1169px;
+  height: 105px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #616c76;
+  *zoom: 1;
+}
+.footer__logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 44px auto;
+  text-align: center;
+}
+.footer:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.footer__left {
+  float: left;
+  width: 296px;
+  margin: 50px 0 50px;
+  *zoom: 1;
+}
+.footer__left:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.footer__copy {
+  display: inline;
+}
+
+.footer__search {
+  margin-left: 45px;
+  font-size: 14px;
+  color: #616c76;
+  border-bottom: 1px solid #616c76;
+}
+.footer__search:hover {
+  border-bottom-color: transparent;
+}
+
+.design {
+  float: right;
+  display: inline-block;
+  font-size: 14px;
+  margin: 50px 0 50px;
+  color: #616c76;
+  border-bottom: 1px solid #616c76;
+  *zoom: 1;
+}
+.design:hover {
+  border-bottom-color: transparent;
+}
+.design:after {
+  content: " ";
+  display: table;
+  clear: both;
 }

@@ -5,12 +5,15 @@ body
 	height: 100%
 a
 	text-decoration: none
-
 .out
-	width: 1198px
+	width: 1200px
 	height: auto
-	margin: 21px auto 0
+	margin: 21px auto 106px
 	+clr
+.push
+	clear: both
+	height: 106px
+/* --------------------- header ----------------- */
 .header
 	width: 1192px
 	margin: 0 auto
@@ -38,4 +41,43 @@ a
 		top: -2px
 		left: -28px
 		+s(user)
-
+/* ----------------------  footer -------------------------- */
+.footer
+	position: relative
+	width: 1169px
+	height: 105px
+	margin: 0 auto
+	font-size: 14px
+	color: #616C76
+	&__logo
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		margin: 44px auto
+		text-align: center
+	+clr
+.footer__left
+	float: left
+	width: 296px
+	margin: 50px 0 50px
+	+clr
+.footer__copy
+	display: inline
+.footer__search
+	margin-left: 45px
+	font-size: 14px
+	color: #616C76
+	border-bottom: 1px solid #616c76
+	&:hover
+		border-bottom-color: transparent
+.design
+	float: right
+	display: inline-block
+	font-size: 14px
+	margin: 50px 0 50px
+	color: #616C76
+	border-bottom: 1px solid #616c76
+	&:hover
+		border-bottom-color: transparent
+	+clr

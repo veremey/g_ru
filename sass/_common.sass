@@ -1,93 +1,41 @@
-// ---------------- main styles ------------ //
-
-$gray: #5a5a5b
-$light: #ededed
-$black: #1a1a1b
-$blue: #08c
-$yellow: #fd0
 body
-	font: normal 13px/1.15 Arial, sans-serif
-	color: $black
-	background: $blue
+	font: 12px/1.2 "Roboto", Arial, sans-serif
+	color: #000
+	background: url(../img/bg.png) 50% 0 no-repeat
+	height: 100%
 a
-	color: $blue 
-	&:hover
-		text-decoration: none
+	text-decoration: none
 
-.l-layout	 
-	margin: 0 auto -250px // марджин від'ємний такої ж велечини як висота футера
-	position: relative
-	min-height: 100%
-	height: auto !important
-	height: 100% 
-.push
-	clear: both
-	height: 250px // прижимає футер до низу вікна браузера,якщо контента мало 
-	// висота так ж як висота футера
-.wrapper
-	overflow: hidden
-.wrap
+.out
+	width: 1198px
+	height: auto
+	margin: 21px auto 0
 	+clr
-.l-container
-	width: 1280px
-	margin: 0 auto 
-
-// ---------------- END main styles ------------ //
-
-// ---------------- Header styles ------------ //
-
 .header
-	padding-bottom: 20px
-	background: $black 
-.header__top
-	margin-bottom: 20px
-	+clr // аналог <div class="clear"></div> після елементів з флоатами
-
+	width: 1192px
+	margin: 0 auto
+	+clr
 .logo
 	float: left
-	+s(logo) // достаємо картинку зі спрайта
-
-.soc
+	margin-left: 290px
+	+clr
+.header__item
 	float: right
-	margin-top: 20px
-	a
-		display: inline-block
-		vertical-align: middle
-.soc__vk
-	+s(soc-vk)
-.soc__fb
-	+s(soc-fb)
-.soc__tw
-	+s(soc-tw)
-.soc__gp
-	+s(soc-gp)
-.soc__od
-	+s(soc-od)
- 
-.nav
-	overflow: hidden
-	+border-radius(10px)
-.nav__item
-	float: left
-	width: 20%
-.nav__link
-	display: block
-	height: 40px
-	line-height: 40px
-	text-decoration: none
-	text-align: center
-	color: $light 
-	background: $blue 
-	&:hover
-		background: $gray
-		+box-shadow(inset 0 0 7px rgba(0,0,0,.5)) 
-// ---------------- END Header styles ------------ //
-
-// ---------------- Footer styles ------------ //
-
-.footer
+	height: 100px
+	+clr
+.header__link
 	position: relative
-	height: 250px
-	+g($blue 20%, $yellow 80%) 
-	
-// ---------------- END Footer styles ------------ //  
+	font-weight: 300
+	color: #000
+	margin-right: 50px
+	line-height: 100px
+	border-bottom: 1px dashed #000
+	&:hover
+		border-bottom-color: transparent
+	&:before
+		content: ""
+		position: absolute
+		top: -2px
+		left: -28px
+		+s(user)
+

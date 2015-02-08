@@ -88,6 +88,7 @@ body {
   width: 900px;
   margin: 0 auto;
   perspective: 300px;
+  font-size: 70px;
   text-align: center;
   margin: 0 auto;
   -webkit-mask-image: -webkit-linear-gradient(black 75%, rgba(0, 0, 0, 0.4) 85%);
